@@ -12,8 +12,6 @@ namespace program2
 {
     public partial class Form1 : Form
     {
-        TextBox txt = new TextBox();
-        Button btm = new Button();
         public Form1()
         {
             InitializeComponent();
@@ -35,7 +33,6 @@ namespace program2
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)

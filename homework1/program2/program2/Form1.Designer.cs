@@ -51,7 +51,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(88, 25);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "输入一个数";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
@@ -60,7 +59,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(88, 25);
             this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "输入一个数";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
@@ -78,7 +76,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(67, 25);
             this.textBox3.TabIndex = 4;
-            this.textBox3.Text = "计算结果";
             // 
             // Form1
             // 
