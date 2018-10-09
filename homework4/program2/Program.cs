@@ -119,19 +119,6 @@ class Order
     }
 }
 
-//class OrderDetails 
-//{
-//    Order O1 = new Order("张三","001",3,3,3);
-//    Order O2= new Order("李四", "002",4,4,4);
-//    List<Order> orderlist = new List<Order>();
-//    public OrderDetails()
-//    {
-//        orderlist.Add(O1);
-//        orderlist.Add(O2);
-        
-//    }
-//}
-
 class OrderService
 {
     public List<Order> list=new List<Order>();
@@ -239,5 +226,4 @@ class OrderService
        
         
     }
-
 }
