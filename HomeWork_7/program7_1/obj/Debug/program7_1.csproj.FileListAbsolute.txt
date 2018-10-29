@@ -1,0 +1,12 @@
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\bin\Debug\program7_1.exe.config
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\bin\Debug\program7_1.exe
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\bin\Debug\program7_1.pdb
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\obj\Debug\program7_1.Form1.resources
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\obj\Debug\program7_1.Properties.Resources.resources
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\obj\Debug\program7_1.csproj.GenerateResource.Cache
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\obj\Debug\program7_1.csproj.CoreCompileInputs.cache
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\obj\Debug\program7_1.exe
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\obj\Debug\program7_1.pdb
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\obj\Debug\program7_1.csprojResolveAssemblyReference.cache
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\obj\Debug\program7_1.Form2.resources
+E:\answer\code\homework_csharp\HomeWork_7\program7_1\obj\Debug\program7_1.Form3.resources
