@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Input4 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.Input3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,10 +53,9 @@
             this.ballNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.penNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientTelephoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.Input4 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -63,6 +65,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.Input4);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.label2);
@@ -80,6 +83,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1272, 82);
             this.panel1.TabIndex = 0;
+            // 
+            // Input4
+            // 
+            this.Input4.Location = new System.Drawing.Point(293, 45);
+            this.Input4.Name = "Input4";
+            this.Input4.Size = new System.Drawing.Size(80, 25);
+            this.Input4.TabIndex = 16;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(398, 42);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(80, 29);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "修改";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(208, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 15);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "ID_Modify";
             // 
             // button6
             // 
@@ -210,7 +239,8 @@
             this.appleNumDataGridViewTextBoxColumn,
             this.ballNumDataGridViewTextBoxColumn,
             this.penNumDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn});
+            this.priceDataGridViewTextBoxColumn,
+            this.ClientTelephoneNumber});
             this.dataGridView1.DataSource = this.bindingSource1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -255,35 +285,25 @@
             this.priceDataGridViewTextBoxColumn.HeaderText = "price";
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             // 
+            // ClientTelephoneNumber
+            // 
+            this.ClientTelephoneNumber.DataPropertyName = "ClientTelephoneNumber";
+            this.ClientTelephoneNumber.HeaderText = "ClientTelephoneNumber";
+            this.ClientTelephoneNumber.Name = "ClientTelephoneNumber";
+            // 
             // bindingSource1
             // 
             this.bindingSource1.DataSource = typeof(program7_1.order);
             // 
-            // label2
+            // button7
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(208, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 15);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "ID_Modify";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(398, 42);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 29);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "修改";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // Input4
-            // 
-            this.Input4.Location = new System.Drawing.Point(293, 45);
-            this.Input4.Name = "Input4";
-            this.Input4.Size = new System.Drawing.Size(80, 25);
-            this.Input4.TabIndex = 16;
+            this.button7.Location = new System.Drawing.Point(948, 19);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(143, 36);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "HTML转化按钮";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 
@@ -334,6 +354,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Input4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClientTelephoneNumber;
+        private System.Windows.Forms.Button button7;
     }
 }
 

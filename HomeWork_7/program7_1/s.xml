@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <ClientName>张三</ClientName>
+    <Number>1</Number>
+    <AppleNum>3</AppleNum>
+    <BallNum>3</BallNum>
+    <PenNum>3</PenNum>
+    <price>9900</price>
+  </Order>
+  <Order>
+    <ClientName>李四</ClientName>
+    <Number>2</Number>
+    <AppleNum>4</AppleNum>
+    <BallNum>4</BallNum>
+    <PenNum>4</PenNum>
+    <price>13200</price>
+  </Order>
+</ArrayOfOrder>

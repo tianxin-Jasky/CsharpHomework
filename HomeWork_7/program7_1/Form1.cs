@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+using System.Xml.XPath;
+using System.Xml.Xsl;
+using System.IO;
 
 namespace program7_1
 {
@@ -14,16 +18,16 @@ namespace program7_1
     {
         public OrderService orderOP = new OrderService();
         public string KeyWord { get; set; }
-        public int KeyWord1 { get; set; }
-        public int KeyWord2 { get; set; }
-        public int KeyWord3 { get; set; }
+        public long KeyWord1 { get; set; }
+        public long KeyWord2 { get; set; }
+        public long KeyWord3 { get; set; }
 
 
         public Form1()
         {
             InitializeComponent();
-            orderOP.list.Add(new order("张三", 1, 3, 3, 3));
-            orderOP.list.Add(new order("李四", 2, 4, 4, 4));
+            orderOP.list.Add(new order("张三", 20181111001, 3, 3, 3,123456789));
+            orderOP.list.Add(new order("李四", 20181111002, 4, 4, 4,987654321));
             bindingSource1.DataSource = orderOP.list;
 
             Input.DataBindings.Add("Text", this, "KeyWord");
@@ -49,7 +53,7 @@ namespace program7_1
         //这个按钮是增加一个订单，但是只有当进行查询操作之后，点击显示全部订单的按钮，新建的订单才会显示出来(不知道怎么回事)
         private void button3_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(orderOP);
             form2.MdiParent = this.MdiParent;
             form2.TransfEvent += form2_TransfEvent;
             form2.Show();
@@ -72,11 +76,39 @@ namespace program7_1
         private void button5_Click(object sender, EventArgs e)
         {
             order modify = orderOP.SearchOrderNum(KeyWord3);
-            Form3 form3 = new Form3(modify);
+            Form3 form3 = new Form3(orderOP,modify);
             form3.MdiParent = this.MdiParent;
             form3.Show();
             bindingSource1.DataSource = orderOP.SearchOrderName(KeyWord);
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.Load(@"E:\answer\code\homework_csharp\HomeWork_7\program7_1\s.xml");
+
+                XPathNavigator nav = doc.CreateNavigator();
+                nav.MoveToRoot();
+
+                XslCompiledTransform xt = new XslCompiledTransform();
+                xt.Load(@"E:\answer\code\homework_csharp\HomeWork_7\program7_1\Transform.xslt");
+
+                FileStream fileStream = File.OpenWrite(@"E:\answer\code\homework_csharp\HomeWork_7\program7_1\homework8.html");
+                XmlTextWriter writer =
+                    new XmlTextWriter(fileStream, System.Text.Encoding.UTF8);
+                xt.Transform(nav, null, writer);
+            }
+            catch (XmlException ee)
+            {
+                Console.WriteLine("XML Exception:" + ee.ToString());
+            }
+            catch (XsltException ee)
+            {
+                Console.WriteLine("XSLT Exception:" + ee.ToString());
+            }
+
+        }
     }
 }
