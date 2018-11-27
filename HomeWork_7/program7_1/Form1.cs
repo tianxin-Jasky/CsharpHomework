@@ -11,6 +11,7 @@ using System.Xml;
 using System.Xml.XPath;
 using System.Xml.Xsl;
 using System.IO;
+using MySql.Data.MySqlClient;
 
 namespace program7_1
 {
@@ -109,6 +110,43 @@ namespace program7_1
                 Console.WriteLine("XSLT Exception:" + ee.ToString());
             }
 
+        }
+
+        string MyconnectionString = "Server=localhost;Database=order_1;Uid=root;Pwd=password";
+        private void button8_Click(object sender, EventArgs e)
+        {
+            MySqlConnection msq = new MySqlConnection(MyconnectionString);
+            msq.Open();
+            MySqlCommand cmd=new MySqlCommand("CREATE TABLE `NewTable` (`ClientName`  varchar(255) NULL,`ID`  bigint NULL,`AppleNum`  int NULL,`BallNum`  int NULL,`PenNum`  int NULL,`Price`  decimal(10, 2) NULL,`ClientTelephoneNumber`  bigint NULL);",msq);
+            cmd.ExecuteNonQuery();
+            msq.Close();
+            //try
+            //{
+            //    cmd = msq.CreateCommand();
+            //    foreach (order i in orderOP.list)
+            //    {
+            //        cmd.CommandText = "INSERT INTO Order(ClientName,ID,AppleNum,BallNum,PenNum,Price,ClientTelephoneNumber)VALUES(@ClientName,@ID,@AppleNum,@BallNum,@PenNum,@Price,@ClientTelephoneNumber)";
+            //        cmd.Parameters.AddWithValue("@ClientName", i.ClientName);
+            //        cmd.Parameters.AddWithValue("@ID", i.ID);
+            //        cmd.Parameters.AddWithValue("@AppleNum", i.AppleNum);
+            //        cmd.Parameters.AddWithValue("@BallNum", i.BallNum);
+            //        cmd.Parameters.AddWithValue("@PenNum", i.PenNum);
+            //        cmd.Parameters.AddWithValue("@Price", i.price);
+            //        cmd.Parameters.AddWithValue("@ClientTelephoneNumber", i.ClientTelephoneNumber);
+
+            //    }
+            //}
+            //catch (Exception)
+            //{
+            //    throw;
+            //}
+            //finally
+            //{
+            //    if (msq.State == ConnectionState.Open)
+            //    {
+            //        msq.Close();
+            //    }
+            //}
         }
     }
 }

@@ -1,0 +1,7 @@
+E:\answer\code\homework_csharp\HomeWork_7\program\bin\Debug\program.exe.config
+E:\answer\code\homework_csharp\HomeWork_7\program\bin\Debug\program.exe
+E:\answer\code\homework_csharp\HomeWork_7\program\bin\Debug\program.pdb
+E:\answer\code\homework_csharp\HomeWork_7\program\obj\Debug\program.csprojResolveAssemblyReference.cache
+E:\answer\code\homework_csharp\HomeWork_7\program\obj\Debug\program.csproj.CoreCompileInputs.cache
+E:\answer\code\homework_csharp\HomeWork_7\program\obj\Debug\program.exe
+E:\answer\code\homework_csharp\HomeWork_7\program\obj\Debug\program.pdb

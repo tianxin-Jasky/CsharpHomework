@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.Input4 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,7 +56,7 @@
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClientTelephoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -65,6 +66,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.Input4);
             this.panel1.Controls.Add(this.button5);
@@ -83,6 +85,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1272, 82);
             this.panel1.TabIndex = 0;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(948, 19);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(143, 36);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "HTML转化按钮";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Input4
             // 
@@ -138,9 +150,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(773, 19);
+            this.button4.Location = new System.Drawing.Point(657, 9);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 36);
+            this.button4.Size = new System.Drawing.Size(139, 25);
             this.button4.TabIndex = 7;
             this.button4.Text = "显示全部订单";
             this.button4.UseVisualStyleBackColor = true;
@@ -148,9 +160,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(582, 19);
+            this.button3.Location = new System.Drawing.Point(514, 9);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 37);
+            this.button3.Size = new System.Drawing.Size(117, 26);
             this.button3.TabIndex = 6;
             this.button3.Text = "新增";
             this.button3.UseVisualStyleBackColor = true;
@@ -295,15 +307,15 @@
             // 
             this.bindingSource1.DataSource = typeof(program7_1.order);
             // 
-            // button7
+            // button8
             // 
-            this.button7.Location = new System.Drawing.Point(948, 19);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(143, 36);
-            this.button7.TabIndex = 17;
-            this.button7.Text = "HTML转化按钮";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button8.Location = new System.Drawing.Point(520, 42);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(111, 31);
+            this.button8.TabIndex = 18;
+            this.button8.Text = "mysql";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form1
             // 
@@ -356,6 +368,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClientTelephoneNumber;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 
